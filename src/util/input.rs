@@ -21,7 +21,7 @@ impl InputLoader {
         return Ok(Self {
             cache: HashMap::new(),
             client: reqwest::blocking::Client::builder()
-                .user_agent("github.com/ArcheCraft/AdventOfCode")
+                .user_agent("github.com/ArcheCraft/AdventOfCode using reqwest/0.11 by archecraft1@gmail.com")
                 .default_headers(headers)
                 .build()?,
         });
