@@ -13,7 +13,6 @@ impl InputLoader {
 
     pub fn new() -> eyre::Result<Self> {
         let mut headers = reqwest::header::HeaderMap::new();
-        println!("{}", Self::HEADER_SESSION);
         headers.insert(
             "Cookie",
             reqwest::header::HeaderValue::from_str(Self::HEADER_SESSION.trim())?,
