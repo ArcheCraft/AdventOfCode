@@ -7,6 +7,7 @@ mod day4;
 mod day5;
 mod day6;
 mod day7;
+mod day8;
 
 pub fn register_all(puzzles: &mut Puzzles) {
     day1::register_all(puzzles);
@@ -16,4 +17,5 @@ pub fn register_all(puzzles: &mut Puzzles) {
     day5::register_all(puzzles);
     day6::register_all(puzzles);
     day7::register_all(puzzles);
+    day8::register_all(puzzles);
 }
